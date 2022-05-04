@@ -49,12 +49,7 @@ The following describes how the files correspond to the inputs and output:
 
 | File | Description | Inputs/Outputs | Notes |
 | --- | --- | --- | --- |
-| 000\_master.do | Sets macros for all variables, specifications, and replications used in the other files |
- | Only edit the global folder and the individual global macros |
-| 01\_clean.do | Cleans and merges all raw data files | Inputs: HRS tracker file, randhrs1992\_2016v1.dta, HRS-CMS linked data files listed above (located on the server)
-Output: Medicare.dta |
- |
-| 02\_est.do | Runs Basu and Manning method | Input: Medicare.dta
-Output: Cost-specific tables in both word and excel | Copy and paste excel output into draft tables for updates |
-| 03\_summarystatistics.do | Creates summary statistics | Inputs (produced in 01\_clean.do): CasesAndControls.dta, AnalyticFileLongBasuVariables\_ss\_claims.dta, PD\_wide.dta, and Medicaid\_wide.dta
-Output: Summary statistics table and Figure 1 | If matching criteria changes (matchgrp variable) make sure to update the through value on line 18 to reflect max value |
+| 000\_master.do | Sets macros for all variables, specifications, and replications used in the other files | | Only edit the global folder and the individual global macros |
+| 01\_clean.do | Cleans and merges all raw data files | Inputs: HRS tracker file, randhrs1992\_2016v1.dta, HRS-CMS linked data files listed above (located on the server) Output: Medicare.dta | |
+| 02\_est.do | Runs Basu and Manning method | Input: Medicare.dta Output: Cost-specific tables in both word and excel | Copy and paste excel output into draft tables for updates |
+| 03\_summarystatistics.do | Creates summary statistics | Inputs (produced in 01\_clean.do): CasesAndControls.dta, AnalyticFileLongBasuVariables\_ss\_claims.dta, PD\_wide.dta, and Medicaid\_wide.dta Output: Summary statistics table and Figure 1 | If matching criteria changes (matchgrp variable) make sure to update the through value on line 18 to reflect max value |
